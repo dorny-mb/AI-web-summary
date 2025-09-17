@@ -26,7 +26,7 @@ def messages_for(website):
 
 
 def summarize(url):
-    website = Website(url)
+    website = Website(url, use_selenium=True)
 
     # with openAI SDK
     # response = openai.chat.completions.create(
